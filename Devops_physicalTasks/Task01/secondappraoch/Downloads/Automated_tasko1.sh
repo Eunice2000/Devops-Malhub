@@ -15,7 +15,7 @@ echo
 s=1
 for u in $FILES
 do
-	echo "Processing $m file for conversion..."
+	echo "Processing $s file for conversion..."
 	echo
 	pdftotext -enc UTF-8 $u
 	s=$(( s + 1 ))
@@ -30,7 +30,7 @@ k=1
 for n in $NEWFILES
 do
 	mv $n "convertedfile$k.txt"
-	echo "$a file renamed..."
+	echo "$k file renamed..."
 	echo
 	k=$(( k + 1 ))
 done
